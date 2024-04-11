@@ -1421,7 +1421,7 @@ html {
     background-color: rgb(30 66 159 / var(--tw-bg-opacity))
 }
 
-.bg-facebook {
+.bgfb {
     --tw-bg-opacity: 1;
     background-color: rgb(53 87 151 / var(--tw-bg-opacity))
 }
@@ -1776,7 +1776,7 @@ html {
     background-color: rgb(30 66 159 / var(--tw-bg-opacity))
 }
 
-.hover\:bg-facebook:hover {
+.hover\:bgfb:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(53 87 151 / var(--tw-bg-opacity))
 }
@@ -2076,15 +2076,15 @@ html {
     font-size: 14px
 }
 
-.ionicon-stroke-width {
-    stroke-width: var(--ionicon-stroke-width, 32px)
+.iconsus-stroke-width {
+    stroke-width: var(--iconsus-stroke-width, 32px)
 }
 
-.ionicon-fill-none {
+.iconsus-fill-none {
     fill: none
 }
 
-.ionicon {
+.iconsus {
     stroke: currentcolor;
     display: inline-block;
     width: 1em;
